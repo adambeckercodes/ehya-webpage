@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EHYA - Your Home Must be Comfy</title>
   <link rel="shortcut icon" href="img/Logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -54,6 +55,7 @@
 
   <main>
     <section class="hero">
+
       <div class="container hero__container">
         <div class="hero__content">
           <h3 class="hero__label">
@@ -65,7 +67,8 @@
           </h1>
 
           <p class="hero__descr">
-            We&nbsp;know building home like an&nbsp;build trust on&nbsp;your relationship. So, that&rsquo;s why we&nbsp;want to&nbsp;help you bulding your home like your want and dream.
+            We&nbsp;know building home like an&nbsp;build trust on&nbsp;your relationship. So, that&rsquo;s why
+            we&nbsp;want to&nbsp;help you bulding your home like your want and dream.
           </p>
 
           <div class="hero__btn-wrapper">
@@ -78,8 +81,239 @@
           </div>
         </div>
       </div>
+
+    </section>
+
+    <section class="about">
+      <div class="container about__container">
+        <div class="about__top flex">
+          <p class="about__top-descr">
+            At&nbsp;Ehya, we&nbsp;believe that when it&nbsp;comes to&nbsp;finding a&nbsp;home what&rsquo;s outside the
+            front door is&nbsp;just as&nbsp;important as&nbsp;what&rsquo;s behind&nbsp;it. That&rsquo;s why
+            we&nbsp;go&nbsp;beyond the typical listings, by&nbsp;sourcing insights straight from locals and offering
+            over 34&nbsp;neighborhood map overlays.
+          </p>
+
+          <button class="btn about__btn">
+            <span>Get a Quote</span>
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.11794 12.5278L12.4336 7.21216C12.6906 6.95784 12.6906 6.54224 12.4336 6.28519L7.11794 0.972322C6.86365 0.715281 6.44802 0.715281 6.19101 0.972322L5.58397 1.57936C5.32148 1.83912 5.32693 2.26295 5.59492 2.51724L8.88983 5.65629H1.03125C0.667583 5.65629 0.375 5.94887 0.375 6.31254V7.18754C0.375 7.5512 0.667583 7.84378 1.03125 7.84378H8.88983L5.59492 10.9828C5.32968 11.2371 5.32421 11.661 5.58397 11.9207L6.19101 12.5278C6.4453 12.7848 6.86093 12.7848 7.11794 12.5278Z"
+                fill="#1565D8" />
+            </svg>
+
+          </button>
+        </div>
+
+        <div class="about__main-content">
+          <div class="about__main-titles flex">
+            <h2 class="about__title">
+              about&nbsp;us
+            </h2>
+            <h3 class="about__title-secondary">
+              Prove Service Quality Seriously
+            </h3>
+          </div>
+
+          <div class="about__main-images flex">
+            <picture class="about__img about__img-1">
+              <img src="img/about/about-1.jpg" alt="Image">
+            </picture>
+            <picture class="about__img about__img-2">
+              <img src="img/about/about-2.jpg" alt="Image">
+            </picture>
+            <div class="about__patch">
+              <span>Since</span>
+              <br>
+              <span>1987</span>
+            </div>
+          </div>
+
+          <ul class="about__list list-reset flex">
+            <li class="about__item">
+              <h4 class="about__item-title">
+                01 concept design
+              </h4>
+              <p class="about__item-descr">
+                We help you concept the design based on your needs. House, Interior, Exterior or anything. We can assist
+                your needs.
+              </p>
+            </li>
+            <li class="about__item">
+              <h4 class="about__item-title">
+                02 house planning
+              </h4>
+              <p class="about__item-descr">
+                We not also help you to concepting your plan, but also we can execute it. We have more 500+ house
+                portfolio in last year.
+              </p>
+            </li>
+            <li class="about__item">
+              <h4 class="about__item-title">
+                03 budgeting needs
+              </h4>
+              <p class="about__item-descr">
+                Stuck to manage your budget for build a house? Don’t worry, We can help you arrange and plan your
+                budgeting,
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-work">
+      <div class="container our-work__container">
+        <h2 class="our-work__title">
+          portfolio
+        </h2>
+
+        <div class="our-work__menu-wrapper flex">
+          <h3 class="our-work__title-secondary">
+            Our Work Gallery
+          </h3>
+
+          <nav class="our-work__nav">
+            <ul class="nav__list list-reset flex">
+              <li class="nav__item">
+                <button class="nav__btn nav__btn--active btn">
+                  All
+                </button>
+              </li>
+              <li class="nav__item">
+                <button class="nav__btn btn">
+                  Interior
+                </button>
+              </li>
+              <li class="nav__item">
+                <button class="nav__btn btn">
+                  Exterior
+                </button>
+              </li>
+              <li class="nav__item">
+                <button class="nav__btn btn">
+                  Building
+                </button>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="our-work__swiper-nav flex">
+            <div class="swiper-button-prev">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_0_2471)">
+                  <rect x="1" y="1" width="54" height="54" rx="27" stroke="#183B56" stroke-width="2" />
+                </g>
+                <path
+                  d="M28.7062 34.6031L34.7812 28.5281C35.075 28.2375 35.075 27.7625 34.7812 27.4688L28.7062 21.3969C28.4156 21.1031 27.9406 21.1031 27.6469 21.3969L26.9531 22.0907C26.6531 22.3875 26.6593 22.8719 26.9656 23.1625L30.7312 26.75H21.75C21.3344 26.75 21 27.0844 21 27.5V28.5C21 28.9156 21.3344 29.25 21.75 29.25H30.7312L26.9656 32.8375C26.6625 33.1281 26.6562 33.6125 26.9531 33.9093L27.6469 34.6031C27.9375 34.8969 28.4125 34.8969 28.7062 34.6031Z"
+                  fill="#183B56" />
+                <defs>
+                  <clipPath id="clip0_0_2471">
+                    <rect width="56" height="56" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+            </div>
+            <div class="swiper-button-next">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_0_2471)">
+                  <rect x="1" y="1" width="54" height="54" rx="27" stroke="#183B56" stroke-width="2" />
+                </g>
+                <path
+                  d="M28.7062 34.6031L34.7812 28.5281C35.075 28.2375 35.075 27.7625 34.7812 27.4688L28.7062 21.3969C28.4156 21.1031 27.9406 21.1031 27.6469 21.3969L26.9531 22.0907C26.6531 22.3875 26.6593 22.8719 26.9656 23.1625L30.7312 26.75H21.75C21.3344 26.75 21 27.0844 21 27.5V28.5C21 28.9156 21.3344 29.25 21.75 29.25H30.7312L26.9656 32.8375C26.6625 33.1281 26.6562 33.6125 26.9531 33.9093L27.6469 34.6031C27.9375 34.8969 28.4125 34.8969 28.7062 34.6031Z"
+                  fill="#183B56" />
+                <defs>
+                  <clipPath id="clip0_0_2471">
+                    <rect width="56" height="56" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="img/our-work/inter-1.jpg" alt="" class="our-work__img" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/our-work/inter-2.jpg" alt="" class="our-work__img" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/our-work/inter-3.jpg" alt="" class="our-work__img" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/our-work/inter-4.jpg" alt="" class="our-work__img" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/our-work/inter-5.jpg" alt="" class="our-work__img" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/our-work/inter-6.jpg" alt="" class="our-work__img" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/our-work/inter-7.jpg" alt="" class="our-work__img" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/our-work/exter-1.jpg" alt="" class="our-work__img" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/our-work/exter-2.jpg" alt="" class="our-work__img" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/our-work/exter-3.jpg" alt="" class="our-work__img" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/our-work/exter-4.jpg" alt="" class="our-work__img" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/our-work/exter-5.jpg" alt="" class="our-work__img" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/our-work/exter-6.jpg" alt="" class="our-work__img" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/our-work/exter-7.jpg" alt="" class="our-work__img" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/our-work/build-1.jpg" alt="" class="our-work__img" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/our-work/build-2.jpg" alt="" class="our-work__img" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/our-work/build-3.jpg" alt="" class="our-work__img" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/our-work/build-4.jpg" alt="" class="our-work__img" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/our-work/build-5.jpg" alt="" class="our-work__img" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/our-work/build-6.jpg" alt="" class="our-work__img" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/our-work/build-7.jpg" alt="" class="our-work__img" loading="lazy">
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+
+
+        </div>
+      </div>
+
     </section>
   </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
