@@ -41,6 +41,7 @@
   --main-gap-2: 60px;
   --section-mb: 100px;
   --section-gap-2: 120px;
+  --cards-gap: 30px;
 }
 
 html {
@@ -484,5 +485,323 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 8px;
+}
+
+/* REVIEWS */
+.reviews {
+  margin-bottom: var(--section-gap-2);
+}
+.reviews__bg-wrapper {
+  margin-left: 80px;
+  border-radius: 8px 0px 0px 8px;
+  background: #fafdff;
+}
+
+.reviews__swiper {
+  padding-top: 98px;
+  padding-bottom: 100px;
+  height: fit-content;
+  position: relative;
+}
+
+.reviews__slide {
+  width: 100%;
+  max-width: 920px;
+  max-height: auto;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+}
+
+.reviews__avatar {
+  width: 58px;
+  height: 58px;
+  border-radius: 50px;
+  border: 5px solid var(--section-title-color);
+  object-fit: cover;
+}
+
+.reviews__text {
+  margin: 0;
+  margin-bottom: 54px;
+  color: var(--main-text-color);
+  font-family: "HK Grotesk";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 54px; /* 180% */
+  letter-spacing: 0.2px;
+}
+
+.reviews__author {
+  align-items: center;
+  gap: 13px;
+}
+
+.client-name {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  color: var(--contrast-color);
+}
+
+.client-job {
+  margin: 0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--main-text-color);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  bottom: 85px;
+  left: initial;
+  right: 145px;
+  width: 136px;
+  height: 10px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+}
+
+/* OUR-STORY */
+.our-story {
+  margin-bottom: var(--section-gap-2);
+}
+
+.our-story__title {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--section-title-color);
+  text-transform: uppercase;
+  background-color: rgba(54, 179, 127, 0.1);
+  border-radius: 50px;
+}
+
+.our-story__heading-wrapper {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--main-gap-2);
+}
+
+.our-story__title-secondary {
+  color: var(--main-text-color);
+  margin: 0;
+  font-family: "HK Grotesk";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 125% */
+  letter-spacing: 0.2px;
+}
+
+.our-story__btn {
+  padding: 12px 40px;
+  font-family: "HK Grotesk";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.2px;
+  color: var(--main-text-color);
+  border: 2px solid #b3bac5;
+  border-radius: 50px;
+}
+
+.our-story__list {
+  --offsets: 2;
+}
+
+.our-story__card {
+  width: calc(
+    (100% - (var(--cards-gap) * var(--offsets))) / (var(--offsets)) + 1
+  );
+}
+
+.our-story__card-img {
+  margin-bottom: var(--cards-gap);
+  max-width: 360px;
+  height: 293px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.our-story__cart-title {
+  margin: 0;
+  color: var(--main-text-color);
+  font-family: "HK Grotesk";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 128.571% */
+  letter-spacing: 0.2px;
+}
+
+.our-story__text-prev {
+  margin: 0;
+  margin-bottom: 16px;
+  color: var(--secondary-text-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+}
+
+.our-story__link {
+  padding: 0;
+  margin: 0;
+  padding-right: 20px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--section-title-color);
+  text-decoration: none;
+  background-image: url("../img/our-story/arrow-right.svg");
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+/* CONTACT-US  */
+.contact-us__wrapper {
+  padding: 70px 138px 70px 70px;
+  background-color: var(--main-text-color);
+  border-radius: 10px;
+  gap: 98px;
+  justify-content: space-between;
+}
+
+.contact-us__content {
+  max-width: 487px;
+}
+
+.contact-us__title {
+  margin: 0;
+  margin-bottom: 24px;
+  max-width: 344px;
+  color: white;
+  font-family: "HK Grotesk";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 125% */
+  letter-spacing: 0.2px;
+}
+
+.contact-us__descr {
+  margin: 0;
+  margin-bottom: 36px;
+  color: var(--grey-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.6px; /* 170% */
+}
+
+.contact-us__title-secondary {
+  margin: 0;
+  margin-bottom: 24px;
+  padding-top: 35px;
+  color: #fafafb;
+  font-family: "HK Grotesk";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.2px;
+}
+
+.contact-us__link {
+  color: var(--grey-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+}
+
+.contact__us-form {
+  padding: var(--cards-gap);
+  background-color: white;
+  border-radius: 8px;
+  max-width: 487px;
+}
+
+.form__title {
+  margin: 0;
+  margin-bottom: var(--cards-gap);
+  color: var(--main-text-color);
+  font-family: "HK Grotesk";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px; /* 128.571% */
+  letter-spacing: 0.2px;
+}
+
+.input-wrapper {
+  flex-direction: column;
+}
+
+.input-wrapper input,
+.input-wrapper select {
+  padding: 13px 20px;
+  border: 1px solid var(--form-border-color);
+  color: var(--main-text-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 8px;
+}
+
+.input-wrapper input::placeholder,
+.input-wrapper select::placeholder {
+  color: var(--grey-form-color);
+}
+
+.input-wrapper label {
+  margin-bottom: 8px;
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.form__name-wrapper {
+  gap: 15px;
+}
+
+.input-wrapper:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.form__btn {
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  background-color: var(--contrast-color);
   border-radius: 8px;
 }
