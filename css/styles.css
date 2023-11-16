@@ -634,6 +634,7 @@ img {
 
 .our-story__list {
   --offsets: 2;
+  gap: var(--cards-gap);
 }
 
 .our-story__card {
@@ -687,6 +688,12 @@ img {
 }
 
 /* CONTACT-US  */
+.contact-us__container {
+  max-width: 1280px;
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
 .contact-us__wrapper {
   padding: 70px 138px 70px 70px;
   background-color: var(--main-text-color);
@@ -804,4 +811,105 @@ img {
   line-height: normal;
   background-color: var(--contrast-color);
   border-radius: 8px;
+}
+
+/* FOOTER */
+.footer__container {
+  max-width: 1140px;
+  padding: 100px 150px 80px;
+}
+
+.footer__top {
+  margin-bottom: 102px;
+  align-items: flex-start;
+  gap: var(--cards-gap);
+}
+
+.footer__logo-wrapper {
+  max-width: 263px;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 28px;
+  width: 90px;
+  height: 28px;
+}
+
+.footer__logo svg {
+}
+
+.footer__company-descr {
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--secondary-text-color);
+}
+
+.footer .social__link svg {
+  width: 42px;
+  height: 40px;
+}
+
+.footer .social__list {
+  align-items: center;
+  gap: 6px;
+}
+
+.footer .social__link svg {
+  fill: var(--main-text-color);
+}
+
+.footer__nav {
+  align-items: flex-start;
+  gap: var(--cards-gap);
+}
+
+.footer__nav .nav__list {
+  width: 165px;
+}
+
+.footer__nav .nav__heading {
+  margin: 0;
+  margin-bottom: 31px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--main-text-color);
+}
+
+.footer__nav .nav__list-1 .nav__item:not(:last-child),
+.footer__nav .nav__list-2 .nav__item:not(:last-child),
+.footer__nav .nav__list-3 .nav__item:not(:last-child),
+.footer__nav .nav__list-4 .nav__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.footer__nav .nav__link {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--main-text-color);
+}
+
+.footer__bottom {
+  text-align: center;
+}
+
+.footer__heart-img {
+  margin-bottom: 24px;
+  object-fit: contain;
+  border-radius: 50px;
+}
+
+.footer__copy {
+  margin: 0;
+  color: var(--secondary-text-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
 }
